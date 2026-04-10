@@ -189,22 +189,7 @@ The app automatically:
 - Uses efficient Plotly visualizations
 - Implements responsive layouts
 
-## 🐛 Troubleshooting
 
-### Issue: CatBoost not available
-**Solution**: Install CatBoost separately:
-```bash
-pip install catboost
-```
-
-### Issue: Models training slowly
-**Solution**: The first run trains all models, which may take time. Subsequent interactions use cached models.
-
-### Issue: Data file not found
-**Solution**: Ensure the data file is in the `data/` directory:
-```
-data/WA_Fn-UseC_-Telco-Customer-Churn.csv
-```
 
 ## 📝 Dataset Information
 
@@ -232,9 +217,7 @@ Models are trained with:
 ## 📞 Support
 
 For issues or questions:
-1. Check the troubleshooting section
-2. Review the notebook files for model details
-3. Ensure all dependencies are installed correctly
+kumar2pranav@gmail.com
 
 ## 🎉 Enjoy!
 
