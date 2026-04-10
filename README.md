@@ -45,25 +45,7 @@ An interactive Streamlit web application for predicting customer churn using **a
 - Python 3.8 or higher
 - pip package manager
 
-### Installation
 
-1. **Clone or navigate to the project directory**
-```bash
-cd "/Users/pranav/Desktop/Copy of Churncoach"
-```
-
-2. **Install required packages**
-```bash
-pip install -r requirements.txt
-```
-
-### Running the App
-
-```bash
-streamlit run app.py
-```
-
-The app will automatically open in your default web browser at `http://localhost:8501`
 
 ## 📁 Project Structure
 
