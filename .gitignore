@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Generated artifacts
+*.png
+catboost_info/
+confusion_matrices/
+metric_comparisons/
+faiss_index/
+
+# Optional heavy/raw data
+data/*.xlsx

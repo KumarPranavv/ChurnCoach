@@ -1,0 +1,217 @@
+# SERVICE UPSELL AND CROSS-SELL GUIDE — CUSTOMER-DATA-DRIVEN# SERVICE UPSELL AND CROSS-SELL GUIDE
+
+# Last Updated: March 2026# Last Updated: March 2026
+
+# Recommendations mapped to specific customer data fields.# Recommendations for service additions based on current customer profile.
+
+
+
+## UPSELL 1: DSL to Fiber Optic Upgrade## UPSELL OPPORTUNITY 1: DSL to Fiber Optic Upgrade
+
+Target Data Match:Target Customer: Currently on DSL internet, any tenure
+
+  - InternetService = "DSL"Current Pain Points: Slow speeds, buffering during streaming, work-from-home performance issues
+
+  - Any tenureRecommended Pitch: "Upgrade to fiber optic and experience speeds up to 10x faster. Perfect for streaming, gaming, and working from home."
+
+Specific Recommendations by Data:Pricing: Offer first 3 months at DSL price, then regular fiber pricing
+
+  - IF InternetService = "DSL" AND StreamingTV = "Yes" OR StreamingMovies = "Yes":Expected Revenue Lift: $25-$40/month increase in ARPU
+
+    → PRIORITY UPSELL: "Your streaming deserves 10x faster speeds"Churn Impact: Fiber customers with good experience have 15% lower churn than DSL customers
+
+    → Offer: First 3 months at DSL price, then regular fiber pricingContraindications: Do NOT upsell if customer has expressed price sensitivity or is on hardship plan. Do NOT upsell if fiber is not available in their area.
+
+    → Revenue impact: +$25-40/month ARPU increaseSuccess Metric: 18% conversion rate on targeted offers
+
+  - IF InternetService = "DSL" AND MonthlyCharges < $50:
+
+    → Position as value upgrade: "Fiber for just $15 more per month"## UPSELL OPPORTUNITY 2: Add Streaming Bundle (TV + Movies)
+
+    → Include free OnlineSecurity trial (adds switching cost)Target Customer: Has internet service but no Streaming TV or Streaming Movies
+
+  - IF InternetService = "DSL" AND tenure > 24 months:Current Pain Points: Using separate streaming subscriptions (Netflix, Hulu, etc.) which may cost more in total
+
+    → "You've been loyal — here's a free fiber upgrade for 6 months"Recommended Pitch: "Get our Streaming TV and Streaming Movies bundle for less than you're probably paying for separate subscriptions. All included in one simple bill."
+
+  - IF InternetService = "DSL" AND SeniorCitizen = 1:Pricing: Bundle both streaming services at 20% discount vs individual pricing
+
+    → DO NOT push aggressively; offer gentle trial: "Try faster internet, switch back if you don't love it"Expected Revenue Lift: $15-$25/month increase
+
+Churn Impact: Fiber customers with good experience churn 15% less than DSLChurn Impact: Customers with streaming services have 20% lower churn — content creates engagement stickiness
+
+Contraindication: Do NOT upsell if MonthlyCharges > $80 and customer is price-sensitiveContraindications: Do NOT push if customer explicitly said they don't watch TV. Avoid if they're price-sensitive and adding services increases total bill significantly.
+
+Success Metric: 22% conversion rate when pitched alongside internet upgrade
+
+## UPSELL 2: Add Streaming Bundle
+
+Target Data Match:## UPSELL OPPORTUNITY 3: Add Protection Suite (Security + Device Protection + Tech Support)
+
+  - InternetService ≠ "No" (has internet)Target Customer: Has internet but no Online Security, no Device Protection, no Tech Support
+
+  - StreamingTV = "No" AND/OR StreamingMovies = "No"Current Pain Points: Vulnerable to online threats, no coverage if devices break, no expert help available
+
+Specific Recommendations by Data:Recommended Pitch: "Protect all your devices and get 24/7 tech support. Our Protection Suite covers online security, device insurance, and unlimited tech support — all in one package."
+
+  - IF StreamingTV = "No" AND StreamingMovies = "No":Pricing: Suite pricing at 25% discount vs individual services. First month free trial.
+
+    → Both services at 25% bundle discountExpected Revenue Lift: $20-$30/month increase
+
+    → "All your entertainment in one bill — save vs separate Netflix/Hulu subscriptions"Churn Impact: Protection suite customers have lowest churn rate in entire customer base (8-12%). Protection services create high switching costs.
+
+  - IF StreamingTV = "Yes" AND StreamingMovies = "No":Contraindications: Do NOT push hard on senior citizens who may find it confusing. Offer gentle explanation and setup assistance instead. Avoid if customer has expressed minimal usage needs.
+
+    → Add StreamingMovies at 50% off for 6 months: "Complete your entertainment"Success Metric: 15% conversion rate, highest retention impact of all upsells
+
+  - IF StreamingTV = "No" AND StreamingMovies = "Yes":
+
+    → Add StreamingTV at 50% off for 6 months## UPSELL OPPORTUNITY 4: Add Online Backup Service
+
+  - IF InternetService = "Fiber optic" AND no streaming:Target Customer: Has internet, may or may not have other protection services, any tenure
+
+    → "Your fiber speed is perfect for HD streaming — add both for 30% off"Current Pain Points: Risk of data loss, no cloud backup, important files unprotected
+
+  - IF Partner = "Yes" OR Dependents = "Yes":Recommended Pitch: "Never lose your important files again. Automatic cloud backup for all your documents, photos, and videos."
+
+    → "Family entertainment package — something for everyone"Pricing: Low monthly cost ($5-$10/month), often offered free for first 6 months with any other service addition
+
+Churn Impact: Streaming customers churn 20% less (content creates engagement stickiness)Expected Revenue Lift: $5-$10/month increase (low individually but high margin)
+
+Contraindication: Do NOT push if customer explicitly said they don't watch TVChurn Impact: Minor direct impact (5% improvement) but contributes to service depth and switching cost
+
+Contraindications: Low priority upsell. Only recommend as add-on to other service changes, not as standalone pitch.
+
+## UPSELL 3: Add Protection SuiteSuccess Metric: 12% conversion rate as standalone, 30% as add-on to other purchases
+
+Target Data Match:
+
+  - InternetService ≠ "No"## UPSELL OPPORTUNITY 5: Phone Service Addition
+
+  - OnlineSecurity = "No" AND/OR DeviceProtection = "No" AND/OR TechSupport = "No"Target Customer: Internet-only customer, no phone service
+
+Specific Recommendations by Data:Current Pain Points: May be using mobile only, missing landline reliability for work or emergency
+
+  - IF OnlineSecurity = "No" AND DeviceProtection = "No" AND TechSupport = "No":Recommended Pitch: "Add unlimited phone service to your plan for a low monthly rate. Crystal clear calls, unlimited local and long distance, and reliable connection even during power outages."
+
+    → Complete Protection Suite at 25% discount + first month freePricing: Significant discount when bundled with internet ($10-$15/month vs standalone $25-$30)
+
+    → "Protect all devices, get 24/7 support — one package, complete coverage"Expected Revenue Lift: $10-$15/month increase
+
+    → Revenue impact: +$20-30/monthChurn Impact: Dual-service (internet + phone) customers churn 18% less than internet-only
+
+  - IF OnlineSecurity = "No" only:Contraindications: Declining relevance for younger demographics. Best targeted at 45+ age group, families, and home office users. Do NOT push on customers who've explicitly said they don't need phone service.
+
+    → Add OnlineSecurity: "Protect your browsing and personal data"Success Metric: 8% conversion rate overall, 20% for 45+ demographic
+
+    → IF InternetService = "Fiber optic": "High-speed connections attract more threats — stay protected"
+
+  - IF DeviceProtection = "No" AND Dependents = "Yes":## UPSELL OPPORTUNITY 6: Contract Upgrade (Month-to-Month → Annual)
+
+    → "Protect the whole family's devices — coverage for all your household tech"Target Customer: Month-to-month customer with tenure > 6 months and moderate-to-good satisfaction
+
+  - IF TechSupport = "No" AND SeniorCitizen = 1:Current Pain Points: Paying premium for flexibility they may not need
+
+    → Free TechSupport trial: "Expert help whenever you need it, included for 6 months"Recommended Pitch: "You've been with us for [X] months — why not lock in a lower rate? Switch to an annual plan and save up to 25% on your monthly bill."
+
+  - IF TechSupport = "No" AND tenure < 12 months:Pricing: 15-25% discount on monthly charges for 1-year commitment, 20-30% for 2-year
+
+    → Free TechSupport for 3 months: "We're here to help you get the most from your services"Expected Revenue Lift: Negative short-term (discount) but significant LTV improvement due to reduced churn
+
+Churn Impact: Protection suite = lowest churn rate (8-12%). Highest retention impact of all upsells.Churn Impact: Month-to-month churn is 42%. Annual contract churn is 11%. Two-year contract churn is 3%.
+
+Contraindication: Don't hard-sell to seniors. Gentle educational approach.Contraindications: Do NOT push if customer has expressed desire for flexibility or has mentioned possible relocation. Respect their choice if they decline.
+
+Success Metric: 25% conversion rate when offered with meaningful discount
+
+## UPSELL 4: Add Online Backup Service
+
+Target Data Match:## CROSS-SELL TIMING RULES
+
+  - InternetService ≠ "No"- Best Time to Upsell: During positive interactions (successful support resolution, complimenting service quality)
+
+  - OnlineBackup = "No"- Worst Time to Upsell: During complaint calls, billing disputes, or service outages
+
+Specific Recommendations by Data:- Post-Support Upsell: Wait 48 hours after issue resolution before offering additional services
+
+  - IF OnlineBackup = "No" AND OnlineSecurity = "Yes":- Onboarding Window: Best upsell period is 30-90 days after initial signup (customer is engaged but not yet committed)
+
+    → Natural add-on: "You protect your browsing — now protect your files too"- Renewal Window: 30 days before contract expiration is prime time for bundle offers
+
+    → Add at $5-8/month or free for 6 months with other service addition- Seasonal Timing: Q4 (holiday season) shows highest conversion for entertainment services
+
+  - IF OnlineBackup = "No" AND DeviceProtection = "Yes":- Avoid: Never upsell more than one service per interaction. Let customer settle before offering next upgrade.
+
+    → "Your device is covered — make sure your data is too"
+
+  - IF OnlineBackup = "No" AND tenure > 24 months:## PRIORITY MATRIX FOR UPSELL RECOMMENDATIONS
+
+    → Low-cost loyalty add-on: "$5/month for complete file protection"Given a customer profile, prioritize upsell recommendations in this order:
+
+Churn Impact: Minor (5%) but contributes to service depth and switching cost1. If no protection services → Recommend Protection Suite (highest retention impact)
+
+Contraindication: Low priority standalone. Best as add-on to other changes.2. If DSL internet → Recommend Fiber upgrade (highest revenue impact)
+
+3. If no streaming → Recommend Streaming Bundle (high engagement impact)
+
+## UPSELL 5: Phone Service Addition4. If month-to-month → Recommend Contract Upgrade (highest LTV impact)
+
+Target Data Match:5. If internet-only → Consider Phone Addition (moderate impact)
+
+  - PhoneService = "No" (internet-only customer)6. Always offer Online Backup as add-on (low cost, easy yes)
+
+Specific Recommendations by Data:
+
+  - IF PhoneService = "No" AND SeniorCitizen = 1:## CUSTOMER OBJECTION HANDLING
+
+    → "Reliable landline for emergencies — works even during power outages"- "It's too expensive": Acknowledge, show total value comparison, offer trial period
+
+    → Bundle at $10/month with internet (vs $25-30 standalone)- "I don't need it": Respect the decision, note in profile for future reference, suggest revisiting in 6 months
+
+  - IF PhoneService = "No" AND (Partner = "Yes" OR Dependents = "Yes"):- "I'm thinking about leaving": Switch from upsell to retention mode immediately. Offer retention discount first, then revisit upsell later.
+
+    → "Home phone for the family — unlimited local and long distance"- "Your competitor offers better": Ask what specifically they offer, match or explain our advantages, never badmouth competitors
+
+  - IF PhoneService = "No" AND InternetService = "Fiber optic":- "I need to think about it": Provide clear comparison document via email, follow up in 7 days
+
+    → Digital phone bundled with fiber at $12/month: crystal clear calls
+  - IF PhoneService = "No" AND tenure > 12 months AND MonthlyCharges < $60:
+    → Good candidate: low bill + room to add value
+Churn Impact: Dual-service customers churn 18% less than internet-only
+Contraindication: Declining relevance for younger demographics. Best for 45+ age group.
+
+## UPSELL 6: Contract Upgrade (Month-to-Month → Annual)
+Target Data Match:
+  - Contract = "Month-to-month"
+  - tenure > 6 months (has been with us long enough to commit)
+Specific Recommendations by Data:
+  - IF Contract = "Month-to-month" AND tenure 6-12 months:
+    → "You've been with us [X] months — lock in 20% savings with annual plan"
+    → Example: $70/month → $56/month = saves $168/year
+  - IF Contract = "Month-to-month" AND tenure 12-24 months:
+    → "Upgrade to annual and save 25% — you're clearly happy with us!"
+    → Example: $80/month → $60/month = saves $240/year
+  - IF Contract = "Month-to-month" AND tenure > 24 months:
+    → "Exclusive loyal customer 2-year rate: 30% off — not available to new customers"
+    → Example: $90/month → $63/month = saves $648 over 2 years
+  - IF Contract = "Month-to-month" AND MonthlyCharges > $100:
+    → Highest savings pitch: "Save over $300/year just by committing"
+Churn Impact: Month-to-month churn 42% → annual 11% → 2-year 3%
+Contraindication: Don't push if customer wants flexibility or mentioned relocation.
+
+## UPSELL PRIORITY MATRIX (by customer data)
+Given a customer's data, recommend in this order:
+1. IF OnlineSecurity="No" AND DeviceProtection="No" AND TechSupport="No" → Protection Suite (highest retention impact)
+2. IF InternetService="DSL" → Fiber upgrade (highest revenue impact)
+3. IF StreamingTV="No" OR StreamingMovies="No" → Streaming bundle (high engagement)
+4. IF Contract="Month-to-month" AND tenure > 6 months → Contract upgrade (highest LTV impact)
+5. IF PhoneService="No" AND SeniorCitizen=1 → Phone addition
+6. IF OnlineBackup="No" → Backup as easy add-on
+
+## TIMING RULES
+- Best: After successful support resolution or positive interaction
+- Worst: During complaints, billing disputes, or outages
+- Post-support: Wait 48 hours after issue resolution
+- Onboarding window: 30-90 days after signup (engaged but not committed)
+- Renewal window: 30 days before contract expiration
+- NEVER upsell more than one service per interaction

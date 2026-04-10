@@ -1,0 +1,341 @@
+# CUSTOMER RETENTION PLAYBOOKS — DATA-DRIVEN ACTION PLANS# CUSTOMER RETENTION PLAYBOOKS
+
+# Last Updated: March 2026# Last Updated: March 2026
+
+# Each playbook maps directly to customer data fields for precise matching.# These playbooks define specific retention actions based on customer risk profiles.
+
+# Reference specific field values: tenure, MonthlyCharges, Contract, InternetService,
+
+# OnlineSecurity, DeviceProtection, TechSupport, PaymentMethod, Partner, Dependents,## PLAYBOOK 1: New Customer Flight Risk (Tenure < 12 months)
+
+# SeniorCitizen, StreamingTV, StreamingMovies, PaperlessBilling, etc.Trigger: Customer tenure is under 12 months AND contract is month-to-month
+
+Risk Level: HIGH
+
+## PLAYBOOK 1: New Customer Flight Risk (tenure ≤ 12, Month-to-Month)Primary Strategy: Lock-in incentive
+
+Trigger Conditions:Actions:
+
+  - tenure ≤ 12 months- Offer 25% discount on first year if customer upgrades to a 1-year contract
+
+  - Contract = "Month-to-month"- Provide free premium service trial for 3 months (Online Security or Tech Support)
+
+Risk Level: HIGH (churn probability typically 45-60%)- Assign a dedicated onboarding specialist for a welcome call within 48 hours
+
+- Send personalized "Thank You for Choosing Us" email with exclusive perks
+
+Specific Actions by Customer Data:- If monthly charges exceed $70, offer a bundled package that saves 15-20%
+
+- IF MonthlyCharges > $70 AND Contract = "Month-to-month":Escalation: If customer has already contacted support with complaints, escalate to retention team lead within 24 hours
+
+    → Offer 25% discount for switching to 1-year contract (saves ~$17.50/month on $70 bill = $210/year)Expected Retention Improvement: 35-45% reduction in churn probability
+
+- IF MonthlyCharges ≤ $70 AND Contract = "Month-to-month":
+
+    → Offer 20% discount for 1-year contract + free OnlineSecurity or TechSupport trial (3 months)## PLAYBOOK 2: Senior Citizen Isolation Risk
+
+- IF InternetService = "Fiber optic" AND tenure ≤ 6 months:Trigger: Customer is a senior citizen (SeniorCitizen = 1) AND has no partner AND no dependents
+
+    → Free speed upgrade for 6 months + free OnlineSecurity + DeviceProtection trial (90 days)Risk Level: HIGH
+
+- IF InternetService = "DSL" AND tenure ≤ 12 months:Primary Strategy: Simplified service and personal touch
+
+    → Free upgrade to Fiber optic for 3 months at DSL price to create speed dependencyActions:
+
+- IF Partner = "No" AND Dependents = "No":- Offer simplified billing with larger print statements
+
+    → Personal onboarding call within 48 hours, "Your exclusive member discount" positioning- Provide free Tech Support add-on for 6 months
+
+- IF Partner = "Yes" OR Dependents = "Yes":- Schedule quarterly courtesy check-in calls
+
+    → Family bundle at 15% household discount, highlight DeviceProtection for family- Offer a senior-specific loyalty discount of 15% on monthly charges
+
+- IF PaymentMethod = "Electronic check":- If customer has no online security, provide it free for 12 months
+
+    → $5/month credit for auto-pay switch (reduces churn probability by ~15 percentage points)- Recommend removing unused streaming services to reduce bill
+
+- IF OnlineSecurity = "No" AND DeviceProtection = "No" AND TechSupport = "No":Escalation: If customer has called support more than twice in last 3 months, assign dedicated senior care agent
+
+    → Complete Protection Suite free for 3 months (reduces churn by 20-30%)Expected Retention Improvement: 25-35% reduction in churn probability
+
+- IF tenure < 3 months AND MonthlyCharges > $80:
+
+    → URGENT escalation to retention team lead within 24 hours## PLAYBOOK 3: Price-Sensitive Churner
+
+Trigger: Monthly charges are above median ($70) AND customer is on month-to-month AND tenure < 24 months
+
+Expected Retention Improvement: 35-45% churn reductionRisk Level: HIGH
+
+Timeline: Execute within first 72 hours of risk detectionPrimary Strategy: Value demonstration and price matching
+
+Actions:
+
+## PLAYBOOK 2: Senior Citizen Retention Plan- Conduct bill review to identify unused services that can be removed
+
+Trigger Conditions:- Offer competitive price match if customer mentions competitor offers
+
+  - SeniorCitizen = 1- Propose downgrade to a lower-tier plan with option to upgrade later at locked rate
+
+  - Highest risk when: Partner = "No" AND Dependents = "No"- Provide a one-time billing credit of $50 as goodwill gesture
+
+Risk Level: HIGH (churn probability 35-45%)- If total services > 5, offer a bundle discount saving 20% compared to individual pricing
+
+- Present total cost of ownership comparison showing long-term savings with annual contract
+
+Specific Actions by Customer Data:Escalation: If customer explicitly states they are leaving for a competitor, offer retention-exclusive rate (up to 30% off for 6 months)
+
+- IF SeniorCitizen = 1 AND Partner = "No" AND Dependents = "No":Expected Retention Improvement: 30-40% reduction in churn probability
+
+    → Automatic 15% senior loyalty discount (saves $9.75/month on $65 bill = $117/year)
+
+    → Quarterly courtesy check-in calls + dedicated senior care agent## PLAYBOOK 4: Loyal Customer at Risk
+
+- IF SeniorCitizen = 1 AND OnlineSecurity = "No":Trigger: Tenure > 36 months AND churn risk score is elevated (above 50%)
+
+    → Free OnlineSecurity for 12 months with phone-guided setup walkthroughRisk Level: MEDIUM-HIGH
+
+- IF SeniorCitizen = 1 AND TechSupport = "No":Primary Strategy: Loyalty recognition and exclusive perks
+
+    → Free TechSupport for 6 months (seniors without tech support churn 40% more)Actions:
+
+- IF SeniorCitizen = 1 AND MonthlyCharges > $70:- Send personalized loyalty appreciation letter with tenure milestone recognition
+
+    → Mandatory bill review — likely paying for unused services- Offer exclusive loyalty discount of 10-15% locked for 24 months
+
+    → Remove unnecessary StreamingTV/StreamingMovies add-ons, save $10-20/month- Provide free service upgrade (e.g., faster internet tier, additional streaming)
+
+- IF SeniorCitizen = 1 AND Contract = "Month-to-month":- Invite to VIP customer advisory panel
+
+    → 2-year senior stability plan with 20% discount + price lock guarantee- If on month-to-month, offer 2-year contract with significant savings (25-30% off)
+
+    → "Your rate will NEVER increase for 24 months"- Give priority support queue access
+
+- IF SeniorCitizen = 1 AND PaymentMethod = "Electronic check":Escalation: If customer has recent billing disputes, resolve immediately with supervisor override
+
+    → Phone-assisted auto-pay setup + $5/month creditExpected Retention Improvement: 40-50% reduction in churn probability
+
+- IF SeniorCitizen = 1 AND InternetService = "Fiber optic" AND MonthlyCharges > $90:
+
+    → Evaluate if DSL suffices; if so, downgrade saves $25-40/month and increases loyalty## PLAYBOOK 5: No-Protection Customer
+
+Trigger: Customer has no Online Security AND no Device Protection AND no Tech Support
+
+Expected Retention Improvement: 25-35% churn reductionRisk Level: MEDIUM
+
+Primary Strategy: Security awareness and free trial
+
+## PLAYBOOK 3: Price-Sensitive ChurnerActions:
+
+Trigger Conditions:- Send educational email about online security threats and data protection
+
+  - MonthlyCharges > $70- Offer complete security bundle (Online Security + Device Protection) free for 3 months
+
+  - Contract = "Month-to-month"- If customer has fiber optic internet, emphasize the higher need for security services
+
+  - tenure < 24 months- Provide one-time free device check-up
+
+Risk Level: HIGH (churn probability 40-55%)- Bundle Tech Support with existing services at 50% discount
+
+Escalation: None required for this tier
+
+Specific Actions by Customer Data:Expected Retention Improvement: 15-25% reduction in churn probability
+
+- IF MonthlyCharges > $100 AND Contract = "Month-to-month":
+
+    → URGENT: 25% discount for 1-year contract = save $25+/month ($300+/year)## PLAYBOOK 6: Fiber Optic High Spender
+
+    → One-time $50 billing credit as immediate goodwillTrigger: Internet Service is Fiber Optic AND monthly charges > $90
+
+- IF MonthlyCharges $70-$100 AND Contract = "Month-to-month":Risk Level: MEDIUM
+
+    → 20% discount for 1-year contract + additional 5% if customer has 3+ servicesPrimary Strategy: Premium experience and value justification
+
+- IF InternetService = "Fiber optic" AND MonthlyCharges > $90:Actions:
+
+    → Price lock guarantee: current rate for 24 months + free speed upgrade- Offer speed upgrade at no additional cost for 6 months
+
+- IF total_services >= 5:- Provide premium streaming bundle (TV + Movies) if not already subscribed
+
+    → 15% multi-service bundle discount, show individual vs bundle pricing comparison- Schedule network optimization check to ensure best performance
+
+- IF PaymentMethod = "Electronic check" AND MonthlyCharges > $80:- Offer price lock guarantee for 18 months at current rate
+
+    → $5/month auto-pay credit + $25 one-time switching bonus ($85 first-year savings)- If on month-to-month, present 2-year fiber loyalty plan with 20% savings
+
+- IF tenure < 6 months AND MonthlyCharges > $80:- Give early access to new service features and beta programs
+
+    → "New Customer Price Protection": lock rate for 18 months + free premium trialEscalation: If customer reports speed issues, dispatch technician within 24 hours
+
+Expected Retention Improvement: 20-30% reduction in churn probability
+
+Escalation: If customer mentions competitor, offer retention-exclusive rate (30% off for 6 months)
+
+Expected Retention Improvement: 30-40% churn reduction## PLAYBOOK 7: Electronic Check Payment Risk
+
+Trigger: Payment method is Electronic Check AND contract is month-to-month
+
+## PLAYBOOK 4: Loyal Customer at Risk (tenure > 36 months)Risk Level: MEDIUM-HIGH
+
+Trigger Conditions:Primary Strategy: Payment method migration with incentive
+
+  - tenure > 36 monthsActions:
+
+  - Churn probability > 0.4- Offer $5/month discount for switching to automatic bank transfer or credit card
+
+Risk Level: MEDIUM-HIGH- Explain convenience benefits of automatic payments (no missed payments, no late fees)
+
+- Provide one-time $25 credit for setting up auto-pay
+
+Specific Actions by Customer Data:- If customer has paperless billing, offer additional 3% discount for full digital experience
+
+- IF tenure 36-48 months AND churn probability > 0.5:- Highlight that automatic payment customers qualify for exclusive promotional offers
+
+    → 10% loyalty discount (saves $8.50/month on $85 bill = $102/year)Escalation: If customer has history of late payments, offer flexible billing date adjustment
+
+    → Personalized "3-Year Anniversary" appreciation letterExpected Retention Improvement: 20-30% reduction in churn probability
+
+- IF tenure 48-60 months AND churn probability > 0.4:
+
+    → 15% loyalty discount locked for 24 months + free service tier upgrade## PLAYBOOK 8: Multi-Service Subscriber at Risk
+
+    → On $90/month bill: saves $13.50/month ($162/year)Trigger: Customer has 5+ services AND churn probability > 40%
+
+    → VIP customer advisory panel invitationRisk Level: MEDIUM
+
+- IF tenure > 60 months:Primary Strategy: Bundle optimization and loyalty lock
+
+    → 20% loyalty discount + free service upgrade + priority support queueActions:
+
+    → On $95/month bill: saves $19/month ($228/year)- Review all active services and identify any that are underused
+
+    → Dedicated account manager- Propose optimized bundle that maintains core services at reduced price
+
+- IF tenure > 36 months AND Contract = "Month-to-month":- Offer free upgrade on one service tier (e.g., basic to premium streaming)
+
+    → Exclusive 2-year contract with 25-30% off: "Not available to new customers"- Provide family sharing options if customer has dependents
+
+- IF tenure > 36 months AND OnlineSecurity = "No" AND DeviceProtection = "No":- Lock current bundle price for 24 months with no increase guarantee
+
+    → Gift free Protection Suite for 12 months as loyalty reward- Create personalized usage report showing value they receive
+
+- IF tenure > 48 months AND InternetService = "Fiber optic":Escalation: If monthly charges exceed $100, involve billing specialist to find savings
+
+    → Free permanent speed upgrade + 24-month price lock guaranteeExpected Retention Improvement: 25-35% reduction in churn probability
+
+
+Expected Retention Improvement: 40-50% churn reduction
+
+## PLAYBOOK 5: No-Protection Customer (Missing Security Services)
+Trigger Conditions:
+  - OnlineSecurity = "No" AND DeviceProtection = "No" AND TechSupport = "No"
+  - InternetService ≠ "No"
+Risk Level: MEDIUM (churn probability 25-35%)
+
+Specific Actions by Customer Data:
+- IF all three protection services = "No":
+    → Protection Suite free for 3 months, then 25% off ongoing (~$22.50 vs $30/month)
+- IF InternetService = "Fiber optic" AND no protection:
+    → PRIORITY: free OnlineSecurity for 12 months + DeviceProtection at 50% off
+- IF InternetService = "DSL" AND no protection:
+    → OnlineSecurity + OnlineBackup bundle at $10/month (vs $18 individual)
+- IF SeniorCitizen = 1 AND no protection:
+    → Free OnlineSecurity + TechSupport with phone-guided setup (gentle approach, no hard sell)
+- IF tenure > 24 months AND no protection:
+    → Gift OnlineSecurity as loyalty reward: "Free security upgrade for valued customers"
+- IF MonthlyCharges < $50 AND no protection:
+    → Complete protection for $15/month extra: "Peace of mind for less than 50 cents/day"
+
+Expected Retention Improvement: 15-25% churn reduction
+
+## PLAYBOOK 6: Fiber Optic High Spender
+Trigger Conditions:
+  - InternetService = "Fiber optic"
+  - MonthlyCharges > $90
+Risk Level: MEDIUM (highest revenue customer — must retain)
+
+Specific Actions by Customer Data:
+- IF MonthlyCharges > $100 AND InternetService = "Fiber optic":
+    → Price lock for 24 months + free max speed upgrade + premium support tier
+- IF InternetService = "Fiber optic" AND Contract = "Month-to-month":
+    → 2-year fiber loyalty plan with 20% savings ($20/month on $100 = $480/2 years)
+    → Include free StreamingTV or StreamingMovies
+- IF InternetService = "Fiber optic" AND no streaming services:
+    → Streaming bundle at 30% discount: "Maximize your fiber speed"
+- IF InternetService = "Fiber optic" AND OnlineSecurity = "No":
+    → Free OnlineSecurity: "High-speed connection needs premium security — it's on us"
+
+Expected Retention Improvement: 20-30% churn reduction
+
+## PLAYBOOK 7: Electronic Check Payment Risk
+Trigger Conditions:
+  - PaymentMethod = "Electronic check"
+  - Contract = "Month-to-month"
+Risk Level: MEDIUM-HIGH (electronic check = 45% churn vs 15% for auto-pay)
+
+Specific Actions by Customer Data:
+- IF PaymentMethod = "Electronic check" AND Contract = "Month-to-month":
+    → $5/month auto-pay credit + $25 one-time credit = $85 first-year savings
+- IF PaymentMethod = "Electronic check" AND MonthlyCharges > $80:
+    → Enhanced $7/month auto-pay credit (saves $84/year)
+- IF PaymentMethod = "Electronic check" AND tenure < 12 months:
+    → Combine auto-pay switch + contract upgrade = 25% total discount
+- IF PaymentMethod = "Electronic check" AND PaperlessBilling = "Yes":
+    → Additional 3% "full digital experience" discount
+- IF PaymentMethod = "Electronic check" AND SeniorCitizen = 1:
+    → Phone-assisted auto-pay setup with dedicated support call
+
+Expected Retention Improvement: 20-30% churn reduction
+
+## PLAYBOOK 8: Multi-Service Subscriber at Risk
+Trigger Conditions:
+  - Customer has 5+ active services
+  - Churn probability > 0.4
+Risk Level: MEDIUM
+
+Specific Actions by Customer Data:
+- IF total_services >= 5 AND MonthlyCharges > $100:
+    → "All-In Bundle" price lock: 15% below current total for 24 months
+    → On $110/month: saves $16.50/month ($198/year)
+    → Personalized value report: "You receive $X in total service value"
+- IF total_services >= 5 AND Contract = "Month-to-month":
+    → "Loyalty Bundle Contract": 2-year with 25% bundle discount
+- IF total_services >= 5 AND (Partner = "Yes" OR Dependents = "Yes"):
+    → Family sharing on streaming/phone + multi-device DeviceProtection discounts
+- IF total_services 3-4:
+    → Upsell missing services at 20% bundle discount: "Add 2 more, save on everything"
+
+Expected Retention Improvement: 25-35% churn reduction
+
+## PLAYBOOK 9: Streaming-Dependent User at Risk
+Trigger Conditions:
+  - StreamingTV = "Yes" OR StreamingMovies = "Yes"
+  - Churn probability > 0.3
+Risk Level: MEDIUM
+
+Specific Actions by Customer Data:
+- IF StreamingTV = "Yes" AND StreamingMovies = "Yes":
+    → 20% streaming bundle discount + 12-month price/content guarantee
+- IF only one streaming service:
+    → Cross-sell missing one at 50% off for 6 months
+- IF streaming active AND InternetService = "DSL":
+    → Offer Fiber optic at DSL price for 3 months: "10x faster streaming, same price"
+- IF streaming active AND InternetService = "Fiber optic":
+    → Free speed upgrade: "No buffering, no lag — your fiber just got faster"
+
+Expected Retention Improvement: 20-30% churn reduction
+
+## PLAYBOOK 10: Single No-Family User at Risk
+Trigger Conditions:
+  - Partner = "No" AND Dependents = "No"
+  - Contract = "Month-to-month"
+Risk Level: MEDIUM-HIGH (no family ties = low switching cost)
+
+Specific Actions by Customer Data:
+- IF Partner = "No" AND Dependents = "No" AND tenure < 12 months:
+    → "Member Exclusive" 20% annual contract discount + free premium trial
+- IF Partner = "No" AND Dependents = "No" AND tenure >= 24 months:
+    → "Individual Loyalty" program: 10% discount + priority support + personal account manager
+- IF Partner = "No" AND Dependents = "No" AND MonthlyCharges > $80:
+    → Bill review, remove unused family features, rightsize plan, lock in savings
+
+Expected Retention Improvement: 20-30% churn reduction

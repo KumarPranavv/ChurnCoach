@@ -1,0 +1,247 @@
+# CUSTOMER SEGMENT PROFILES — DATA-FIELD SPECIFIC MATCHING# CUSTOMER SEGMENT PROFILES
+
+# Last Updated: March 2026# Last Updated: March 2026
+
+# Each segment maps to exact data field values for precise customer-to-segment matching.# These profiles define distinct customer segments with their churn patterns and best interventions.
+
+
+
+## SEGMENT 1: The Uncommitted New User## SEGMENT 1: The Uncommitted New User
+
+Data Field Match:Profile: Tenure 0-12 months, month-to-month contract, no partner, no dependents
+
+  - tenure: 0-12 monthsTypical Monthly Charges: $50-$80
+
+  - Contract: "Month-to-month"Churn Pattern: Highest churn risk segment (45-55% churn rate). These customers haven't developed loyalty yet and are still comparing options. They often leave within the first 6 months if they find a better deal.
+
+  - Typical: Partner = "No", Dependents = "No"Key Churn Triggers: Competitor promotions, first billing surprise, poor initial experience, lack of engagement
+
+Typical MonthlyCharges: $50-$80Behavioral Signals: Low service adoption (1-2 services), no auto-pay setup, no family connections
+
+Churn Rate: 45-55%Best Intervention: Aggressive onboarding program with personal touch. Offer contract upgrade incentive (25-30% discount on annual). Free premium service trial. Welcome call within first week.
+
+Communication Channel: Phone call + personalized email sequence
+
+Churn Triggers by Data:Timing: Intervene within first 90 days before habits form elsewhere
+
+- IF tenure ≤ 3 months: Highest risk window — hasn't formed habits yetSuccess Rate of Intervention: 35-40% retention improvement when contacted within first 30 days
+
+- IF tenure 4-6 months: Still comparing — competitor promotions most dangerous
+
+- IF tenure 7-12 months: Approaching decision point — intervene before month 12## SEGMENT 2: The Price-Sensitive Senior
+
+- IF MonthlyCharges > $70 AND tenure < 6 months: Price shock risk (didn't expect this cost)Profile: Senior citizen (65+), often alone (no partner), basic services, concerned about costs
+
+- IF PaymentMethod = "Electronic check": Additional 15% churn risk on top of baseTypical Monthly Charges: $40-$65
+
+Churn Pattern: Moderate-high churn (35-40%). Often leave due to perceived high costs relative to usage, confusion about billing, or feeling undervalued.
+
+Best Intervention by Data:Key Churn Triggers: Bill increases, complex service changes, difficulty reaching support, feeling that services are "too complicated"
+
+- tenure ≤ 3 months: Welcome call + 25% annual contract discount + free premium trialBehavioral Signals: Calls support frequently, may have had billing disputes, uses basic services only, prefers paper billing
+
+- tenure 4-6 months: Satisfaction check + 20% annual contract offer + personalized emailBest Intervention: Simplify their plan, remove unnecessary services, offer senior discount (15-20%), assign dedicated support agent, quarterly courtesy calls. Never upsell aggressively - focus on trust.
+
+- tenure 7-12 months: Pre-anniversary offer — "Lock in your rate before it changes"Communication Channel: Phone call (preferred over email/digital)
+
+- IF OnlineSecurity = "No" AND DeviceProtection = "No": Free Protection Suite trial (3 months)Timing: Proactive quarterly check-ins, immediate response to any support call
+
+- IF InternetService = "DSL": Free fiber upgrade trial to increase perceived valueSuccess Rate of Intervention: 30-35% retention improvement with dedicated care
+
+
+
+Communication: Phone call + personalized email within first 90 days## SEGMENT 3: The Streaming Power User
+
+Success Rate: 35-40% retention improvement when contacted within first 30 daysProfile: Has both Streaming TV and Streaming Movies, usually fiber optic internet, tenure varies
+
+Typical Monthly Charges: $85-$120
+
+## SEGMENT 2: The Price-Sensitive SeniorChurn Pattern: Moderate churn (25-30%). These customers value content and speed. They leave if streaming quality drops, if competitors offer better content bundles, or if they feel they're paying too much for what they get.
+
+Data Field Match:Key Churn Triggers: Buffering/speed issues, content library changes, price increases without added value, cord-cutting trends
+
+  - SeniorCitizen: 1Behavioral Signals: High data usage, may have multiple devices, often has no phone service (internet-only household)
+
+  - Often: Partner = "No"Best Intervention: Ensure speed matches premium tier, offer exclusive content access, bundle streaming savings, speed upgrade at no cost. Price lock guarantee to prevent bill shock.
+
+  - Services: Typically 1-3 basic servicesCommunication Channel: In-app notifications + email
+
+Typical MonthlyCharges: $40-$65Timing: Intervene when usage patterns change (drop in streaming hours) or after any service disruption
+
+Churn Rate: 35-40%Success Rate of Intervention: 25-30% retention improvement with speed/content upgrades
+
+
+
+Churn Triggers by Data:## SEGMENT 4: The Loyal But Neglected Veteran
+
+- IF MonthlyCharges increased from previous period: Bill shock is #1 triggerProfile: Tenure 48+ months, has been a steady customer, may be on older/expensive plan
+
+- IF TechSupport = "No": Frustration with technology drives them awayTypical Monthly Charges: $70-$100
+
+- IF OnlineSecurity = "No": Vulnerability anxiety, may cancel internet entirelyChurn Pattern: Lower overall churn (15-20%) but increasing. These customers have been loyal but feel taken for granted. They see new customer deals they don't qualify for and feel penalized for loyalty.
+
+- IF Contract = "Month-to-month": No commitment barrier to leavingKey Churn Triggers: Discovering new customers get better rates, accumulating small frustrations, competitor "win-back" offers, service quality degradation
+
+- IF PaymentMethod = "Electronic check": Check-writing hassle, may stop payingBehavioral Signals: Stable usage patterns, rarely contacts support, may not have upgraded services in years, no recent promotional offers
+
+Best Intervention: Proactive loyalty recognition before they become dissatisfied. Exclusive veteran discount (10-15%), free service upgrade, loyalty milestone rewards, priority support access, VIP treatment.
+
+Best Intervention by Data:Communication Channel: Personal phone call from account manager + physical mail (loyalty certificate)
+
+- IF SeniorCitizen = 1 AND Partner = "No": 15% senior discount + quarterly check-in callsTiming: At tenure milestones (3, 4, 5 years) and immediately if churn signals appear
+
+- IF SeniorCitizen = 1 AND TechSupport = "No": Free TechSupport for 6 monthsSuccess Rate of Intervention: 45-55% retention improvement when recognized before complaint
+
+- IF SeniorCitizen = 1 AND MonthlyCharges > $60: Bill review to remove unused services
+
+- IF SeniorCitizen = 1 AND InternetService = "Fiber optic": Check if DSL would suffice (save money)## SEGMENT 5: The Security-Conscious Professional
+
+- IF SeniorCitizen = 1 AND StreamingTV = "No" AND StreamingMovies = "No": Don't upsell streamingProfile: Has online security, device protection, tech support. Often has internet + phone. Working professional.
+
+Typical Monthly Charges: $75-$110
+
+Communication: Phone call preferred (never email-only for seniors)Churn Pattern: Low churn (10-15%). These customers value reliability and security above price. They rarely leave unless there's a major service failure or a significantly better enterprise-grade offer.
+
+Success Rate: 30-35% retention with dedicated careKey Churn Triggers: Security breach incidents, prolonged outages, poor tech support experience, business-grade competitor offerings
+
+Behavioral Signals: Uses all protection services, may have business use case, values uptime guarantees
+
+## SEGMENT 3: The Streaming Power UserBest Intervention: Emphasize security track record, offer enhanced SLA (Service Level Agreement), provide business-tier support, maintain price stability. Don't discount heavily — these customers value quality over price.
+
+Data Field Match:Communication Channel: Email with detailed service reports
+
+  - StreamingTV: "Yes" AND/OR StreamingMovies: "Yes"Timing: After any service disruption or security incident, immediately
+
+  - InternetService: "Fiber optic" (preferred) or "DSL"Success Rate of Intervention: 60-70% retention when quality concerns are addressed promptly
+
+Typical MonthlyCharges: $85-$120
+
+Churn Rate: 25-30%## SEGMENT 6: The Family Plan Holder
+
+Profile: Has partner and/or dependents, multiple services, often longer tenure
+
+Churn Triggers by Data:Typical Monthly Charges: $80-$115
+
+- IF InternetService = "DSL" AND streaming active: Buffering/speed frustrationChurn Pattern: Low-moderate churn (18-22%). Family connections create natural stickiness. However, these customers are price-conscious about total household spend and will switch if they find significantly better family deals.
+
+- IF MonthlyCharges > $100: May feel overpaying for content they can get elsewhereKey Churn Triggers: Major life events (divorce, kids leaving home), competitor family bundles, total bill exceeding budget threshold, service issues affecting the whole household
+
+- IF Contract = "Month-to-month": Can easily switch to competitor streaming bundlesBehavioral Signals: Multiple lines, streaming services for family, may have device protection for multiple devices
+
+- IF OnlineSecurity = "No": Streaming accounts vulnerable to hackingBest Intervention: Family bundle optimization, multi-device discounts, parental control features, family data sharing plans. Show total household savings compared to individual plans. Offer family loyalty discount.
+
+Communication Channel: Email to primary account holder + family portal access
+
+Best Intervention by Data:Timing: Proactive at contract renewal, after any life event indicators
+
+- IF StreamingTV = "Yes" AND StreamingMovies = "Yes": 20% streaming bundle discountSuccess Rate of Intervention: 35-40% retention improvement with family-focused offers
+
+- IF only one streaming: Cross-sell other at 50% off for 6 months
+
+- IF InternetService = "DSL" AND streaming: Offer fiber at DSL price for 3 months## SEGMENT 7: The Minimal User
+
+- IF InternetService = "Fiber optic": Free speed upgrade to ensure premium experienceProfile: Phone service only or DSL internet, basic plan, low monthly charges
+
+- IF Contract = "Month-to-month" AND streaming: Content price lock for 12 monthsTypical Monthly Charges: $20-$45
+
+Churn Pattern: Moderate churn (28-32%). These customers have low engagement and low switching costs. They may not see enough value to stay, especially if basic phone/internet is commoditized.
+
+Communication: In-app notifications + emailKey Churn Triggers: Finding cheaper basic plans, moving to mobile-only, reducing expenses, feeling services are unnecessary
+
+Success Rate: 25-30% retention with speed/content upgradesBehavioral Signals: Uses 1-2 services, lowest tier plans, may have been downgrading over time
+
+Best Intervention: Demonstrate additional value they could get at minimal cost increase. Offer free trial of internet/streaming services. Low-cost bundle introduction ($10 more for significantly more services). Keep it simple — don't overwhelm with options.
+
+## SEGMENT 4: The Loyal But Neglected VeteranCommunication Channel: SMS + simple email
+
+Data Field Match:Timing: When usage drops or account changes suggest downsizing intent
+
+  - tenure: 48+ monthsSuccess Rate of Intervention: 20-25% retention improvement with value demonstration
+
+  - Often: on older, more expensive plan
+  - May have: Contract = "Month-to-month" (loyal by choice, not contract)
+Typical MonthlyCharges: $70-$100
+Churn Rate: 15-20% (but increasing)
+
+Churn Triggers by Data:
+- IF tenure > 48 months AND MonthlyCharges > $90: Likely overpaying vs new customer rates
+- IF tenure > 48 months AND Contract = "Month-to-month": Loyal but can leave anytime
+- IF tenure > 60 months AND no recent discount/promotion: Feeling taken for granted
+- IF tenure > 36 months AND OnlineSecurity = "No": Never been offered free upgrades
+
+Best Intervention by Data:
+- IF tenure 48-60 months: 15% loyalty discount locked 24 months + free service upgrade
+- IF tenure > 60 months: 20% discount + priority support + dedicated account manager
+- IF tenure > 36 months AND Contract = "Month-to-month": Exclusive 25-30% 2-year contract
+- IF tenure > 48 months AND InternetService = "Fiber optic": Free max speed upgrade permanent
+- IF tenure > 36 months AND no protection: Gift Protection Suite for 12 months
+
+Communication: Personal phone call from account manager + physical loyalty letter
+Success Rate: 45-55% retention when recognized before complaint
+
+## SEGMENT 5: The Security-Conscious Professional
+Data Field Match:
+  - OnlineSecurity: "Yes"
+  - DeviceProtection: "Yes"
+  - TechSupport: "Yes"
+  - InternetService: "Fiber optic" or "DSL"
+Typical MonthlyCharges: $75-$110
+Churn Rate: 10-15% (lowest churn segment)
+
+Churn Triggers by Data:
+- IF all protection services = "Yes" AND any service outage: Reliability is everything
+- IF MonthlyCharges > $100 AND no recent loyalty recognition: Values quality, but expects recognition
+- IF Contract = "Month-to-month" AND all protections: Stays by choice — service quality must be perfect
+
+Best Intervention by Data:
+- Emphasize security track record, offer enhanced SLA
+- IF MonthlyCharges > $90: Price stability guarantee (no increases for 24 months)
+- IF tenure > 24 months: Business-tier priority support upgrade
+- NEVER discount aggressively — these customers value quality over price
+- After any service disruption: Immediate proactive outreach + service credit
+
+Communication: Email with detailed service/security reports
+Success Rate: 60-70% retention when quality concerns addressed promptly
+
+## SEGMENT 6: The Family Plan Holder
+Data Field Match:
+  - Partner: "Yes" AND/OR Dependents: "Yes"
+  - Often: multiple services, longer tenure
+Typical MonthlyCharges: $80-$115
+Churn Rate: 18-22%
+
+Churn Triggers by Data:
+- IF Partner = "Yes" AND Dependents = "Yes" AND MonthlyCharges > $100: Total household budget concern
+- IF Dependents = "Yes" AND no DeviceProtection: Family devices at risk
+- IF Partner = "Yes" AND Contract = "Month-to-month": Could switch whole family to competitor
+
+Best Intervention by Data:
+- IF Partner = "Yes" AND Dependents = "Yes": Family bundle optimization, show total household savings
+- IF Dependents = "Yes": Multi-device DeviceProtection discount + parental controls
+- IF Partner = "Yes" AND MonthlyCharges > $90: Household bill review, find savings of $10-20/month
+- IF family AND Contract = "Month-to-month": Family loyalty contract with 20% household discount
+
+Communication: Email to primary account holder
+Success Rate: 35-40% retention with family-focused offers
+
+## SEGMENT 7: The Minimal User
+Data Field Match:
+  - total_services: 1-2
+  - InternetService: "DSL" or "No" (phone only)
+  - MonthlyCharges: < $45
+Typical MonthlyCharges: $20-$45
+Churn Rate: 28-32%
+
+Churn Triggers by Data:
+- IF total_services = 1 AND Contract = "Month-to-month": Lowest switching cost possible
+- IF PhoneService = "Yes" AND InternetService = "No": May go mobile-only
+- IF InternetService = "DSL" AND no other services: Low engagement, low value perception
+
+Best Intervention by Data:
+- IF total_services = 1: Free trial of second service (internet or streaming)
+- IF InternetService = "DSL" AND no streaming: "$10 more for TV + Movies" bundle intro
+- IF PhoneService only: Internet + phone bundle at $5 more than phone alone
+- Keep offers simple — don't overwhelm with options
+
+Communication: SMS + simple email
+Success Rate: 20-25% retention with value demonstration

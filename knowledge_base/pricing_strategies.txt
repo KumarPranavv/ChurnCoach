@@ -1,0 +1,214 @@
+# PRICING AND DISCOUNT STRATEGIES — CUSTOMER-DATA-DRIVEN RULES# PRICING AND DISCOUNT STRATEGIES
+
+# Last Updated: March 2026# Last Updated: March 2026
+
+# Each rule maps to specific customer data fields for precise discount calculation.# Rules and guidelines for retention pricing decisions.
+
+
+
+## PRICING RULE 1: Contract Upgrade Incentive## PRICING RULE 1: Contract Upgrade Incentive
+
+Eligibility Data Match:Eligibility: Month-to-month customers with tenure < 24 months
+
+  - Contract = "Month-to-month"Discount: 20-30% off current monthly rate for first year of annual contract, 15% for second year
+
+  - tenure < 24 monthsConditions: Must sign 1-year or 2-year contract. Discount applies to base plan only, not add-on services.
+
+Discount Calculation:Approval Required: None for discounts up to 25%. Manager approval for 26-30%.
+
+  - IF MonthlyCharges > $80: 25-30% off for 1-year contract, 30-35% for 2-yearROI Justification: Average month-to-month churn is 42%, contract churn is 11%. Cost of discount is far lower than cost of acquisition.
+
+    → Example: $90/month → $67.50/month (1-year) = saves $270/yearMax Revenue Impact: Cap monthly discount at $25/month regardless of percentage calculation.
+
+  - IF MonthlyCharges $50-$80: 20-25% off for 1-year, 25-30% for 2-yearStacking: Cannot be combined with loyalty discount. Can be combined with service bundle discount.
+
+    → Example: $70/month → $52.50/month (1-year) = saves $210/year
+
+  - IF MonthlyCharges < $50: 15-20% off for 1-year, 20-25% for 2-year## PRICING RULE 2: Loyalty Retention Discount
+
+    → Example: $40/month → $32/month (1-year) = saves $96/yearEligibility: Customers with tenure >= 36 months showing churn signals (churn probability > 0.5)
+
+Conditions: Discount applies to base plan only. Max cap: $25/month discount.Discount Tiers:
+
+Approval: None for ≤25%. Manager approval for 26-30%.  - Tenure 36-48 months: Up to 10% discount
+
+ROI: Month-to-month churn 42% vs contract churn 11%. Discount cost << acquisition cost.  - Tenure 48-60 months: Up to 15% discount  
+
+Stacking: Cannot combine with loyalty discount. Can combine with service bundle discount.  - Tenure 60+ months: Up to 20% discount + free service upgrade
+
+Conditions: Apply for 6-month period, then reassess. Customer must not have received a retention offer in past 12 months.
+
+## PRICING RULE 2: Loyalty Retention DiscountApproval Required: None for 10%. Supervisor for 15%. Manager for 20%.
+
+Eligibility Data Match:ROI Justification: Lifetime value of 4+ year customers averages $4,200+. Retention discount cost averages $180 over 6 months.
+
+  - tenure >= 36 monthsStacking: Cannot be combined with contract upgrade incentive. Can be combined with senior discount.
+
+  - Churn probability > 0.5
+
+Discount Tiers by Tenure:## PRICING RULE 3: Senior Citizen Special Rate
+
+  - IF tenure 36-48 months: Up to 10% discountEligibility: Senior citizens (65+) on any plan
+
+    → Example: $85/month → $76.50 = saves $102/yearDiscount: Flat 15% off monthly charges
+
+  - IF tenure 48-60 months: Up to 15% discount + free service upgradeConditions: Permanent discount, no expiration. Applied automatically upon verification of senior status.
+
+    → Example: $90/month → $76.50 = saves $162/yearApproval Required: None
+
+  - IF tenure > 60 months: Up to 20% discount + free upgrade + priority supportROI Justification: Senior customers who receive discount show 28% lower churn rate. Social responsibility benefit.
+
+    → Example: $95/month → $76/month = saves $228/yearStacking: Can be combined with loyalty discount (max combined 30%). Cannot exceed $30/month total discount.
+
+Conditions: Apply for 6 months then reassess. No retention offer in past 12 months.
+
+Approval: None for 10%, Supervisor for 15%, Manager for 20%.## PRICING RULE 4: Service Bundle Savings
+
+Stacking: Cannot combine with contract upgrade. Can combine with senior discount.Eligibility: Customers subscribing to 3+ services
+
+Discount Structure:
+
+## PRICING RULE 3: Senior Citizen Special Rate  - 3 services: 5% bundle discount
+
+Eligibility Data Match:  - 4 services: 10% bundle discount
+
+  - SeniorCitizen = 1  - 5+ services: 15% bundle discount
+
+Discount: Flat 15% off MonthlyChargesConditions: Services must include at least one from each category: Connectivity (Phone/Internet), Entertainment (TV/Movies), Protection (Security/Backup/Protection)
+
+  → Example: $65/month → $55.25 = saves $117/yearApproval Required: None — automatically applied
+
+Conditions: Permanent, no expiration. Applied upon senior status verification.ROI Justification: Each additional service reduces churn probability by 8-12%. Bundled customers have 60% lower churn than single-service.
+
+Additional by Data:Stacking: Can be combined with any other discount except new customer promotional pricing.
+
+  - IF SeniorCitizen = 1 AND Partner = "No": Add quarterly check-in calls
+
+  - IF SeniorCitizen = 1 AND TechSupport = "No": Free TechSupport for 6 months## PRICING RULE 5: Payment Method Incentive
+
+  - IF SeniorCitizen = 1 AND MonthlyCharges > $70: Mandatory bill reviewEligibility: Customers paying via electronic check (highest churn payment method at 45%)
+
+Stacking: Can combine with loyalty (max combined 30%, cap $30/month total discount).Incentive: $5/month credit for switching to auto-pay (bank transfer or credit card)
+
+Conditions: Credit applied for first 12 months after switching. Must maintain auto-pay for entire period.
+
+## PRICING RULE 4: Service Bundle SavingsApproval Required: None
+
+Eligibility Data Match (count active services):ROI Justification: Electronic check customers churn at 45% vs 15% for auto-pay customers. $60/year incentive vs average $900/year revenue.
+
+  - PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup,Stacking: Can be combined with any other discount or incentive.
+
+    DeviceProtection, TechSupport, StreamingTV, StreamingMovies
+
+Discount by Service Count:## PRICING RULE 6: Win-Back Pricing (for recently churned)
+
+  - IF 3 services active: 5% bundle discountEligibility: Customers who churned within last 90 days and had tenure > 12 months
+
+  - IF 4 services active: 10% bundle discountOffer: Return at 40% discount for first 6 months, then 20% for next 6 months, then regular pricing
+
+  - IF 5+ services active: 15% bundle discountConditions: Must sign minimum 1-year contract upon return. Previous balance must be settled.
+
+    → Example: $100/month with 5 services → $85/month = saves $180/yearApproval Required: Supervisor approval required for all win-back offers
+
+Conditions: Must include at least one from: Connectivity (Phone/Internet), Entertainment (TV/Movies), Protection (Security/Backup/Protection)ROI Justification: Win-back costs are 50-60% of new acquisition costs. Previous customers require less onboarding support.
+
+Stacking: Can combine with any discount except new customer promo.Stacking: Win-back pricing replaces all other discounts during promotional period.
+
+
+
+## PRICING RULE 5: Payment Method Migration Incentive## PRICING RULE 7: Fiber Optic Price Protection
+
+Eligibility Data Match:Eligibility: Fiber optic internet customers with monthly charges > $90
+
+  - PaymentMethod = "Electronic check"Discount: Price lock guarantee — no increases for 24 months
+
+Incentive Calculation:Additional: Free speed upgrade to next tier if available
+
+  - Base: $5/month credit for 12 months for switching to auto-pay ($60 total)Conditions: Must be on month-to-month or renewing contract. Applied proactively when churn risk > 0.4.
+
+  - IF MonthlyCharges > $80: Enhanced $7/month credit ($84 total)Approval Required: None for price lock. Supervisor for speed upgrade.
+
+  - One-time $25 bonus for setting up auto-payROI Justification: Fiber optic customers generate highest ARPU ($95/month average). Losing them costs $1,140/year in revenue.
+
+  - IF PaperlessBilling = "Yes": Additional 3% "full digital" discountStacking: Can be combined with bundle discount. Price lock applies before other discounts are calculated.
+
+  - IF SeniorCitizen = 1: Phone-assisted setup included
+
+ROI: Electronic check churn 45% vs auto-pay 15%. $60-85 incentive vs $900/year average revenue.## PRICING RULE 8: Hardship Relief Program
+
+Stacking: Can combine with any other discount.Eligibility: Any customer expressing financial difficulty, regardless of tenure
+
+Discount: Up to 50% reduction for 3 months, with gradual step-back to normal pricing over following 3 months
+
+## PRICING RULE 6: Win-Back PricingConditions: Customer must call to request. One hardship relief per 24-month period. Maintain minimum one service.
+
+Eligibility: Churned within 90 days, previous tenure > 12 monthsApproval Required: Supervisor for 30-50%. Automatic for up to 30%.
+
+Offer: 40% discount for 6 months → 20% for next 6 months → regular pricingROI Justification: 72% of hardship relief customers remain after the relief period ends. Cost of relief is significantly lower than replacement acquisition.
+
+Conditions: Must sign 1-year contract. Previous balance settled.Stacking: Replaces all other discounts during hardship period. Previous discounts resume after.
+
+Stacking: Replaces all other discounts during promotional period.
+
+## GENERAL PRICING GUIDELINES
+
+## PRICING RULE 7: Fiber Optic Price Protection- Never discount below cost of service delivery
+
+Eligibility Data Match:- Total combined discounts must not exceed 35% of base monthly charge
+
+  - InternetService = "Fiber optic"- All discounts should have clear end dates (except senior discount)
+
+  - MonthlyCharges > $90- Document all discount approvals for compliance
+
+  - Churn probability > 0.4- Review discount effectiveness quarterly
+
+Offer:- Priority: Retain high-ARPU customers first, then focus on growth potential
+
+  - Price lock: no increases for 24 months at current rate- Escalation path: Agent → Supervisor → Manager → Director (for discounts > $35/month)
+
+  - Free speed upgrade to next tier
+  - IF Contract = "Month-to-month": Combine with 20% 2-year contract discount
+    → Example: $100/month → $80/month locked for 24 months = saves $480
+Stacking: Can combine with bundle discount. Price lock applies before other discounts.
+
+## PRICING RULE 8: Hardship Relief Program
+Eligibility: Any customer expressing financial difficulty
+Discount by Data:
+  - IF MonthlyCharges > $80: Up to 50% reduction for 3 months
+    → Example: $90/month → $45/month for 3 months = saves $135
+  - IF MonthlyCharges $50-$80: Up to 40% reduction for 3 months
+  - IF MonthlyCharges < $50: Up to 30% reduction for 3 months
+  - Gradual step-back to normal pricing over following 3 months
+Conditions: One per 24-month period. Maintain minimum one service.
+ROI: 72% of relief customers remain after period ends.
+
+## PRICING RULE 9: Streaming Bundle Discount
+Eligibility Data Match:
+  - InternetService ≠ "No"
+  - StreamingTV = "No" OR StreamingMovies = "No" (at least one missing)
+Offer:
+  - IF neither streaming: Both services at 25% off combined price
+  - IF one streaming active: Add second at 50% off for 6 months
+  - IF InternetService = "Fiber optic" AND no streaming: 30% streaming bundle discount
+    → "Maximize your fiber speed with HD streaming"
+Expected Impact: Streaming customers churn 20% less (content creates stickiness)
+
+## PRICING RULE 10: New Customer Protection Rate
+Eligibility Data Match:
+  - tenure < 6 months
+  - MonthlyCharges > $70
+  - Contract = "Month-to-month"
+Offer:
+  - Rate lock at current MonthlyCharges for 18 months (no increases)
+  - Free premium service trial (one of: OnlineSecurity, TechSupport, StreamingTV)
+  - IF tenure < 3 months: Add $20 welcome credit
+Conditions: Automatically applied when churn probability > 0.5
+ROI: Acquisition cost of new customer is 5-7x retention cost. Protecting early = highest ROI.
+
+## GENERAL PRICING GUIDELINES
+- Total combined discounts: max 35% of base MonthlyCharges
+- All discounts have clear end dates (except senior discount)
+- Priority: retain high-MonthlyCharges customers first (highest ARPU)
+- Review discount effectiveness quarterly
+- Escalation: Agent → Supervisor → Manager → Director (for discounts > $35/month)
+- Calculate exact savings for customer: always show dollar amounts, not just percentages
